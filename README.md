@@ -9,7 +9,7 @@ I will keep updating the repository at irregular intervals.
 ### The repository format
 should roughly follow the format described below.
 ```
-├── somectfSomeyear
+├── somectf_Someyear
 │   ├── README.md (general CTF info)
 │   └── category1
 │       ├── chall1
