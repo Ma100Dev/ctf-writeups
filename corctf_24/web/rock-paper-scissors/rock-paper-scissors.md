@@ -6,7 +6,7 @@ The application code can be viewed [here](https://static.cor.team/corctf-2024/0e
 The application in question is a Node JS based web app that allows the user to play rock-paper-scissors against a computer that randomly selects a move to play after choosing a username.
 
 As seen below in the shortened code block, the  `/flag` endpoint will reveal the flag to the user, but only after their score exceeds 1336 points.
-```
+```js
 app.get('/flag', async (req, res) => {
 	// Authentication logic here... 
 	const score = await redis.zscore('scoreboard', req.user.username);
@@ -26,7 +26,7 @@ At the new game endpoint `/new` the username is assigned as follows:
 The type of the 'username' is not ever checked! It will get saved to the signed JWT as is. Maybe we can send something other than a string, such as an object, to exploit the app and get the required score?
 
 In the game logic, the following code can be found:
-```
+```js
 // If the player defeats the computer, continue
 if (winning.get(system) === position) {
 	const score = await redis.incr(game);
