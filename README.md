@@ -1,7 +1,6 @@
 # ctf-writeups
 
-A personal collection of my write-ups for my solutions from various CTF competitions. 
-I will keep updating the repository at irregular intervals.
+A personal collection of my write-ups for my solutions from various CTF competitions. Many writeups are missing and some are old or incomplete. Sadly, many of my more impressive write-ups are missing. This repository will only be updated irregularly.
 
 <sup>-Ma100Dev</sup>
 
